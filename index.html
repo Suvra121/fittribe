@@ -12,12 +12,16 @@
   <header>
     <div class="logo">FITTRIBE FITNESS</div>
     <nav>
-      <ul>
+      
+      <ul id="menulist">
         <li><a href="#home">Home</a></li>
         <li><a href="#fees">Pricing</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="menu">
+        <i class="fa-solid fa-bars" onclick="togglemenu()" id="menu"></i>
+      </div>
     </nav>
   </header>
 
@@ -155,6 +159,22 @@
     // Clean up
     document.body.removeChild(downloadLink);
 });
+
+let menulist= document.getElementById('menulist')
+menulist.style.maxHeight="0px";
+
+function togglemenu(){
+  if(menulist.style.maxHeight=="0px")
+  {
+    menulist.style.maxHeight="148px";
+    
+  }
+  else
+  {
+    menulist.style.maxHeight="0px";
+  }
+}
+
 </script>
 
 <footer class="ft">
