@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FITTRIBE FITNESS</title>
+  <!-- <script src="https://kit.fontawesome.com/195b09452c.js" crossorigin="anonymous"></script> -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">FITTRIBE FITNESS</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fees">Pricing</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Welcome to Our Gym</h1>
+      <p>Your journey to fitness starts here.<br>
+        Welcome to our <b>FITTRIBE FITNESS</b> gym, where fitness meets <br>
+        Get ready to sculpt your body, ignite your energy, and unlock your potential.<br>
+         With state-of-the-art equipment and expert trainers, 
+         we're here to guide you on your journey to a healthier, <br>
+         stronger you. Join us and let's crush those goals together!</p>
+      <a href="#fees" class="btn">Get<br>Addmission</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Classes</h2>
+      <p>Choose from a variety of classes including Yoga, Pilates, and more.</p>
+    </div>
+    <div class="feature">
+      <h2>Trainers</h2>
+      <p>Our experienced trainers are dedicated to helping you reach your fitness goals.</p>
+    </div>
+    <div class="feature">
+      <h2>Facilities</h2>
+      <p>State-of-the-art equipment and facilities to support your fitness journey.</p>
+    </div>
+  </section>
+  <!-- ============================================================= -->
+  <section class="fees" id="fees">
+    <h1>Fees Structure</h1>
+    <div class="fees-chart">
+      <div class="fee-option">
+        <h3>Monthly + Admission</h3>
+        <p>550 + 500</p>
+        <p>Monday - Saturday</p>
+        <p>6 AM - 11AM & 3 PM - 9 PM</p>
+        <p>Trainer's Guide</p>
+      </div>
+      <div class="fee-option">
+        <h3>Half-Yearly + Admission</h3>
+        <p>4000 + 500</p>
+        <p>Monday - Saturday</p>
+        <p>6 AM - 11AM & 3 PM - 9 PM</p>
+        <p>Trainer's Guide</p>
+      </div>
+      <div class="fee-option">
+        <h3>Yearly + Admission</h3>
+        <p>6000 + 500</p>
+        <p>Monday - Saturday</p>
+        <p>6 AM - 11AM & 3 PM - 9 PM</p>
+        <p>Trainer's Guide</p>
+      </div>
+    </div>
+    <div class="fees-chart">
+      <div class="fee-option">
+        <h3>Personal Traning</h3>
+        <p><b>12 class 1 month</b></p>
+        <p>1500/-</p><hr>
+        <p>36 class 3 month</p>
+        <p>4000/-</p>
+      </div>
+      <div class="fee-option">
+        <h3>For Kids (3 - 12 yr)</h3>
+        <p><b>Monthly + Admission</b></p>
+        <p>400 + 500</p><hr>
+        <p><b>Half-Yearly + Admission</b></p>
+        <p>1800 + 500</p><hr>
+        <p><b>Yearly + Admission</b></p>
+        <p>3000 + 500</p>
+      </div>
+      <div class="fee-option">
+        <h3>Zumba Class</h3>
+        <p><b>12 class 1 month</b></p>
+        <p>800/-</p><hr>
+        <p>48 class 6 month</p>
+        <p>4500/-</p>
+      </div>
+    </div>
+    <h2 class="tmill">For Treadmill 150/- (only for monthly package)</h2>
+    <button type="button" id="downloadButton" class="dbt"><b>Download Basic Chart</b></button>
+  </section>
+
+<!-- =================================================================== -->
+
+  <section  class="about" id="about">
+    
+    <section class="team">
+      <h1 >Our Team</h1>
+      <div class="member">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis et eros iaculis dignissim. Phasellus ac dolor nec risus facilisis lobortis sit amet at leo. Proin ullamcorper consequat tortor, a finibus massa mollis in. Nulla facilisi.</p>
+
+        <div class="img_name">
+          <img src="member1.jpg" alt="Team Member 1">
+          <h3>Manish Saha</h3>
+        </div>
+      </div>
+      <div class="member">
+        <div class="img_name">
+          <img src="member2.jpg" alt="Team Member 1">
+          <h3>Saikat Haldar</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis et eros iaculis dignissim. Phasellus ac dolor nec risus facilisis lobortis sit amet at leo. Proin ullamcorper consequat tortor, a finibus massa mollis in. Nulla facilisi.</p>
+
+      </div>
+      <div class="member">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis felis et eros iaculis dignissim. Phasellus ac dolor nec risus facilisis lobortis sit amet at leo. Proin ullamcorper consequat tortor, a finibus massa mollis in. Nulla facilisi.</p>
+
+        <div class="img_name">
+          <img src="member3.jpg" alt="Team Member 1">
+          <h3>Rinki Chakraborty</h3>
+        </div>
+      </div>
+      <!-- Add more team members as needed -->
+    </section>
+  
+  </section>
+<!-- ============================================================================================================== -->
+
+
+<script>
+  document.getElementById("downloadButton").addEventListener("click", function() {
+    // Create an anchor element
+    var downloadLink = document.createElement("a");
+    // Set the file URL
+    downloadLink.href = "basic_chart.pdf"; // Replace "path/to/your/file.ext" with the actual file path
+    // Set the file name
+    downloadLink.download = "basic_chart.pdf"; // Replace "filename.ext" with the desired file name
+    // Append the anchor element to the body
+    document.body.appendChild(downloadLink);
+    // Click the anchor element programmatically
+    downloadLink.click();
+    // Clean up
+    document.body.removeChild(downloadLink);
+});
+</script>
+
+<footer class="ft">
+  <p>&copy; 2024 FITTRIBE FITNESS. All rights reserved.</p><a href="https://www.facebook.com/profile.php?id=100093708432256" target="_blank"><i class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/fittribe_fitness?igshid=MzRlODBiNWFlZA%3D%3D&fbclid=IwZXh0bgNhZW0CMTAAAR3tpyZWssQwoKp5bsmWAib4iACtd6rPDva4JrZDfW4sC51v7972jDzpxyI_aem_Af-50AdbRcpBKM_Mg4lk9zAQHnnepLCD5uI2QWhlCejTqE57Wdcpb39_6ToguYvxGbYPegryQPohUVn8r67ZckQx" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+</footer>
+</body>
+</html>
