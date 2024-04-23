@@ -142,7 +142,15 @@
   
   </section>
 <!-- ============================================================================================================== -->
-
+<section class="contact-section" id="contact">
+  <h2>Contact Us</h2>
+  <form action="#" method="POST" id="contact-form">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
 <script>
   document.getElementById("downloadButton").addEventListener("click", function() {
@@ -174,6 +182,47 @@ function togglemenu(){
     menulist.style.maxHeight="0px";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Get form data
+    const formData = new FormData(form);
+
+    // Create an object from form data
+    const data = {};
+    formData.forEach((value, key) => {
+      data[key] = value;
+    });
+
+    // Send form data to the server
+    fetch("send_email.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        alert("Message sent successfully!");
+        form.reset(); // Reset form fields after successful submission
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
+      });
+  });
+});
+
 
 </script>
 
