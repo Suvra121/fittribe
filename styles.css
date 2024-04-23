@@ -30,20 +30,25 @@ body {
     margin-left: 20%;
     display: flex;
     margin-top: 10px;
+    justify-content: space-between;
+    position: relative;
   }
   nav .menu{
+    
     font-size: 20px;
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    
-  }
-  .menu i{
     display: none;
   }
+  /* .menu i{
+    display: none;
+  } */
   nav ul {
+    display: flex;
     list-style-type: none;
     margin-left: 100px;
+    margin-top: 10px;
     padding: 0;
     font-size: 19px;
     align-items: center;
@@ -378,6 +383,44 @@ body {
       border: 3px solid #ff6f00;
     }
   }
+
+  @media only screen and (max-width: 768px){
+    .logo{
+      font-size: 15px;
+      padding: 0px;
+      width: 90px;
+    }
+    nav{
+      width: 100%;
+    }
+    nav .menu{
+      display: inline;
+      right: 0;
+      margin-left: 80%;
+      margin-top: -10px;
+      font-size: 30px;
+    }
+    nav ul{
+      overflow: hidden;
+      margin-left: 50%;
+      flex-direction: column;
+      position:absolute;
+      padding: 0px 40px;
+      top: 32px;
+      text-align: center;
+      background-color: #ff6f00;
+      border-radius: 0 0 15px 15px;
+      justify-content: space-around;
+    }
+    nav ul li{
+      margin-bottom: 20px;
+      padding: 0 0;
+    }
+    nav ul li a{
+      padding: 10px 50px;
+    }
+  }
+
   @media only screen and (max-width: 745px){
     .logo{
       font-size: 22px;
@@ -398,7 +441,7 @@ body {
     .logo{
       font-size: 20px;
     }
-    nav ul {
+    /* nav ul {
       list-style-type: none;
       margin-left: 100px;
       margin-right: 15px;
@@ -406,7 +449,7 @@ body {
       font-size: 19px;
       align-items: center;
       justify-content: center;
-    }
+    } */
     .member {
       display: flex;
       /* text-align: center; */
@@ -417,7 +460,7 @@ body {
     }
   }
   @media only screen and (max-width: 688px){
-    nav ul li {
+    /* nav ul li {
       display: inline;
       margin-right: 18px;
       padding: 6px;
@@ -427,11 +470,11 @@ body {
     }
     nav ul li:hover{
       /* border: 2px solid black; */
-      /* padding: 8px; */
+      /* padding: 8px; 
       background-color: black;
       border-radius: 20px;
       transform: scale(1.1)
-    }
+    } */
     .feature {
       text-align: center;
       /* max-width: 300px; */
@@ -474,26 +517,25 @@ body {
       font-size: 10px;
       
     }
-    header{
+    /* header{
       height: 5px;
     }
     nav ul {
+      display: grid;
       background-color: #080808;
       list-style-type: none;
-      margin-top: 199px;
+      position: fixed;
+      margin-top: 19px;
       margin-left: 30px;
       margin-right: 0px;
       padding: 0 30px;
       font-size: 14px;
-      align-items: center;
-      justify-content: center;
       border-radius: 10px;
       overflow: hidden;
     }
     
     nav ul li {
       width: 70px;
-      display: grid;
       margin-right: 15px;
       margin-left: 5px;
       padding: 10px;
@@ -504,10 +546,37 @@ body {
       display: block;
     }
     .menu{
+      position: fixed;
       padding-right: 20px;
-      padding-top: 145px;
-      margin-top: 10px;
+      padding-top: 0;
+      margin-top: -20px;
       margin-left: 5px;
+    } */
+    nav ul{
+      overflow: hidden;
+      margin-left: -10%;
+      flex-direction: column;
+      position:absolute;
+      padding: 0px 40px;
+      top: 32px;
+      text-align: center;
+      background-color: #ff6f00;
+      border-radius: 0 0 15px 15px;
+      justify-content: space-around;
+    }
+    nav ul li{
+      margin-bottom: 20px;
+      padding: 0 0;
+    }
+    nav ul li a{
+      padding: 10px 50px;
+    }
+    nav .menu{
+      display: inline;
+      right: 0;
+      margin-left: 75%;
+      margin-top: -10px;
+      font-size: 30px;
     }
     .hero-text {
       max-width: 800px;
@@ -574,4 +643,37 @@ body {
       font-size: 17px;
     }
     
+  }
+  @media only screen and (max-width: 375px){
+    nav ul{
+      overflow: hidden;
+      margin-left: -10%;
+      flex-direction: column;
+      position:absolute;
+      padding: 0px 40px;
+      top: 32px;
+      text-align: center;
+      background-color: #ff6f00;
+      border-radius: 0 0 15px 15px;
+      justify-content: space-around;
+    }
+    nav ul li{
+      margin-bottom: 20px;
+      padding: 0 0;
+    }
+    nav ul li a{
+      padding: 10px 40px;
+    }
+    nav .menu{
+      display: inline;
+      right: 0;
+      margin-left: 75%;
+      margin-top: -10px;
+      font-size: 30px;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    nav ul li a{
+      padding: 10px 10px;
+    }
   }
