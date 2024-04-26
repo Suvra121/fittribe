@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Orbitron:wght@400..900&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+*{
+  font-family: "Questrial", sans-serif;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -22,6 +28,7 @@ body {
   }
   
   .logo {
+    font-family: "Orbitron", sans-serif;
     font-size: 28px;
     font-weight: bold;
     margin-left: 20px;
@@ -90,6 +97,7 @@ body {
   }
 
   .hero-text {
+    
     max-width: 800px;
     margin: 110px auto;
     backdrop-filter: blur(6px);
@@ -98,6 +106,7 @@ body {
   }
   
   .hero h1 {
+    font-family: "Kalam", cursive;
     font-size: 48px;
     animation: colorChange 5s infinite;
   }
@@ -105,11 +114,17 @@ body {
     0% {
       color: #ff6f00; /* Initial color */
     }
+    25% {
+      color: #fab37d; /* Initial color */
+    }
     50% {
       color: white; /* Midway color */
     }
+    75% {
+      color: rgb(157, 2, 253); /* Midway color */
+    }
     90% {
-      color: black; /* Final color */
+      color: rgb(222, 169, 255); /* Final color */
     }
     100% {
       color: #ff6f00; /* Final color */
@@ -283,6 +298,8 @@ body {
     background-color: #ffbd66;
     padding: 50px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   
   .contact-section h2 {
@@ -294,11 +311,13 @@ body {
   .contact-section form {
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
   }
   
   .contact-section input[type="text"],
   .contact-section input[type="email"],
   .contact-section textarea {
+    margin-left: -15px;
     outline: none;
     width: 100%;
     font-size: 18px;
@@ -573,7 +592,7 @@ body {
       margin-left: 8px;
       width: 200px;
       margin-right: 1px;
-      font-size: 10px;
+      font-size: 15px;
       
     }
     /* header{
