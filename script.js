@@ -12,7 +12,7 @@ document.getElementById("downloadButton").addEventListener("click", function() {
     // Clean up
     document.body.removeChild(downloadLink);
 });
-
+//navbar
 let menulist= document.getElementById('menulist')
 menulist.style.maxHeight="0px";
 
